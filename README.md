@@ -1,2 +1,2 @@
 # WebProject
-Freiman Viacheslav's presentation project
+This is Freiman Viacheslav's presentation project built with help of SpringMVC
