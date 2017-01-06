@@ -68,7 +68,7 @@
                     <input type="password" name="password" placeholder="пароль" />
                     <input type="submit" class="btn" value="вход" />
                     <div class="lables_passreg_text">
-                        <span><a href="#">забыли пароль?</a></span> | <span><a href="/users/registration">регистрация</a></span>
+                        <span><a href="/users/registration">регистрация</a></span>
                     </div>
 
                 </form>

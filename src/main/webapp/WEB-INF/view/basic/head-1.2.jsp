@@ -12,6 +12,4 @@
     <script type="text/javascript" src="/resources/js/selectedmenu.js"></script>
 
     <script type="text/javascript" src="/resources/js/scrolledmenu.js"></script>
-
-    <script type="text/javascript" src="/resources/js/notifications.js"></script>
 </head>

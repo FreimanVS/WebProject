@@ -9,6 +9,8 @@
 
 <jsp:include page="basic/head-1.2.jsp" />
 
+<script type="text/javascript" src="/resources/js/notifications.js"></script>
+
 <body>
 	<noscript>Для правильной работы сайта необходимо включить JavaScript</noscript>
 
@@ -27,38 +29,43 @@
 					<h2>Этот ресурс создан Фрейман В.С.</h2>
 
 					<h2>Технологии, на которых построен данный проект:</h2>
-					<table>
-						<tr>
-							<th><h3>Backend</h3></th>
-							<th><h3>Frontend</h3></th>
-						</tr>
+					<p>
+                        <table>
+                            <tr>
+                                <th><h3>Backend</h3></th>
+                                <th><h3>Frontend</h3></th>
+                            </tr>
 
-						<tr>
-							<td>
-								<ul>
-									<li>JAVA</li>
-									<li>WEBSOCKET</li>
-									<li>JSP</li>
-									<li>JSTL</li>
-									<li>SERVLETS</li>
-									<li>JDBC</li>
-									<li>HIBERNATE</li>
-									<li>SPRING</li>
-									<li>SPRING MVC</li>
-									<li>MYSQL</li>
-								</ul>
-							</td>
-							<td>
-								<ul>
-									<li>HTML</li>
-									<li>CSS</li>
-									<li>JAVA SCRIPT</li>
-									<li>JQUERY</li>
-									<li>AJAX</li>
-								</ul>
-							</td>
-						</tr>
-					</table>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>J2EE</li>
+                                        <li>SPRING MVC</li>
+                                        <li>SPRING</li>
+                                        <li>HIBERNATE</li>
+                                        <li>JDBC</li>
+                                        <li>JSP & SERVLETS</li>
+                                        <li>JSTL</li>
+                                        <li>MYSQL</li>
+                                        <li>TOMCAT</li>
+                                        <li>WEBSOCKET</li>
+                                        <li>MAVEN</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JAVA SCRIPT</li>
+                                        <li>JQUERY</li>
+                                        <li>AJAX</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+
+                    <b>OTHER TOOLS</b>: GIT, IntelliJ IDEA, Eclipse.
 				</div>
 			</div>
 		</div>

@@ -31,7 +31,9 @@
 					</form>
 				</div>
 
-				<br /> или же вы можете связаться с нами по электронной почте: freimanvs@gmail.com
+				<p>или же вы можете связаться с нами по электронной почте: <b>freimanvs@gmail.com</b></p>
+
+				<p>источники данного проекта находятся по адресу: <a href="https://github.com/FreimanVS/WebProject" target="_blank">github.com/FreimanVS/WebProject</a></p>
 			</div>
 		</div>
 
