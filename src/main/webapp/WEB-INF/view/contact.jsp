@@ -33,7 +33,14 @@
 
 				<p>или же вы можете связаться с нами по электронной почте: <b>freimanvs@gmail.com</b></p>
 
-				<p>источники данного проекта находятся по адресу: <a href="https://github.com/FreimanVS/WebProject" target="_blank">github.com/FreimanVS/WebProject</a></p>
+				<p>источники данного проекта находятся по адресу: <br />
+				<a href="https://github.com/FreimanVS/WebProject" target="_blank">github.com/FreimanVS/WebProject</a></p>
+
+				<p>
+				    <b>Сертификаты:</b> <br />
+                    <a href="https://stepik.org/certificate/f0e9969ccc50388d15381248089e16bb8ffbc8b0.pdf" target="_blank">Computer Science Center Certificate</a> <br />
+                    <a href="https://stepik.org/certificate/b8041cbeb49524a91750af92d54e7572ff1915bb.pdf" target="_blank">@Mail.ru Group Certificate</a> <br />
+				</p>
 			</div>
 		</div>
 
