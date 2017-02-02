@@ -65,7 +65,7 @@
                         </table>
                     </p>
 
-                    <b>OTHER TOOLS</b>: GIT, IntelliJ IDEA, Eclipse.
+                    <b>OTHER TOOLS</b>: GIT, IntelliJ IDEA, Eclipse, *nix OS, bash.
 				</div>
 			</div>
 		</div>
