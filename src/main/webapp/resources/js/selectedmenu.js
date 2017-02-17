@@ -3,7 +3,7 @@ var ip = location.host;
 
 $('document').ready(function() {
     $('.menu a').each(function() {
-        if ("http://" + ip + "/" + $(this).attr('href') == window.location.href)
+        if ("http://" + ip + $(this).attr('href') == window.location.href)
         {
             $(this).parent().addClass('selected');
         }
