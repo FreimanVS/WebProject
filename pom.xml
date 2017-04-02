@@ -7,7 +7,7 @@
     <groupId>kino_project</groupId>
     <artifactId>kino_project</artifactId>
     <packaging>war</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>2.0</version>
     <name>Spring MVC Application</name>
 
     <properties>
