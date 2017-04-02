@@ -43,6 +43,10 @@ public class Comments2 {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getIdmovie() {
         return idmovie;
     }

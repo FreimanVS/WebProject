@@ -71,7 +71,7 @@ public class MoviesController {
         return "forward:/show2";
     }
 
-    @PostMapping("/search")
+    @GetMapping("/search")
     public String search(@RequestParam("search_field") String search_field,
                          Model model) {
         List<Movies> movies = moviesTheService.search(search_field);
@@ -106,10 +106,6 @@ public class MoviesController {
 
         return "redirect:/show?idmovie=" + idmovie;
     }
-
-
-
-
 
     private static final MathContext myMathContext = new MathContext(15, RoundingMode.HALF_UP);
 

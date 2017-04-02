@@ -6,27 +6,33 @@ import java.util.List;
  * Created by Brightsunrise on 14.12.2016.
  */
 public interface TheService<T> {
-    public List<T> getList();
+    List<T> getList();
 
-    public List<T> getList(int param);
+    List<T> getList(int param);
 
-    public List<T> getList(String paramName1, String paramValue1, String paramName2, String paramValue2);
+    List<T> getList(String paramName1, String paramValue1, String paramName2, String paramValue2);
 
-    public List<T> getList(String paramName1, int paramValue1, String paramName2, String paramValue2);
+    List<T> getList(String paramName1, int paramValue1, String paramName2, String paramValue2);
 
-    public List<T> getListOrderBy(String param, String how);
+    List<T> getListOrderBy(String param, String how);
 
-    public T get(int id);
+    T get(int id);
 
-    public T get(String uniqParam, String valueTheParam);
+    T get(Long id);
 
-    public T get(String firstParam, int firstValue, String secondParam, String secondValue);
+    T get(String uniqParam, String valueTheParam);
 
-    public void add(T obj);
+    T get(String firstParam, int firstValue, String secondParam, String secondValue);
 
-    public List<T> search(String searchString);
+    void add(T obj);
 
-    public void update(String column, Float value, int id);
+    List<T> search(String searchString);
 
-    public void update(String column, int value, int id);
+    void update(String column, Float value, int id);
+
+    void update(String column, int value, int id);
+
+    void delete(int id);
+
+    void delete(Long id);
 }

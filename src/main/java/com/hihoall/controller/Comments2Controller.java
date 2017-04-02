@@ -5,7 +5,7 @@ import com.hihoall.service.TheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -24,7 +24,7 @@ public class Comments2Controller {
     @Autowired
     private TheService<Comments2> comments2TheService;
 
-    @PostMapping("/getComments")
+    @GetMapping("/getComments")
     public String getComments(Model model,
                               @RequestParam("idmovie") int idmovie) {
         List<Comments2> comments = comments2TheService.getList(idmovie);
@@ -39,7 +39,7 @@ public class Comments2Controller {
         return "commentsblock-newdb";
     }
 
-    @PostMapping("/add")
+    @RequestMapping("/add")
     public String add(@RequestParam("idmovie") int idmovie,
                       @RequestParam("namemovie") String namemovie,
                       @RequestParam("content") String content,

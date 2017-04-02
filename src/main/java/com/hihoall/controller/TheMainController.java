@@ -2,7 +2,7 @@ package com.hihoall.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class TheMainController {
-    @GetMapping("/")
+    @RequestMapping("/")
     public String showPage() {
         return "redirect:/index";
     }
 
-    @GetMapping("/index")
+    @RequestMapping("/index")
     public String index() {
         return "index";
     }
@@ -46,8 +46,18 @@ public class TheMainController {
         return "show";
     }
 
-    @PostMapping("/search")
+    @GetMapping("/search")
     public String search(@RequestParam("search_field") String search_field) {
         return "forward:/movies/search";
+    }
+
+    @RequestMapping("/accessDenied")
+    public String accessDenied() {
+        return "accessDenied";
+    }
+
+    @GetMapping("/admin")
+    public String admin() {
+        return "redirect:/admin/";
     }
 }

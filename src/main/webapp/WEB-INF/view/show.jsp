@@ -34,7 +34,7 @@
 					<br />оцените фильм:
 
 					<c:choose>
-						<c:when test="${cookie.login.value == null || cookie.login.value == 'nuvottakvot' || cookie.login.value == 'doesntExist'}">
+						<c:when test="${pageContext.request.remoteUser == null}">
 							<p style="color: red">Чтобы проголосовать, вам необходимо авторизоваться.</p>
 						</c:when>
 
@@ -47,7 +47,7 @@
 								<input type="radio" name="grade" value="4">
 								<input type="radio" name="grade" value="5">
 								<input type="hidden" name="idmovie" value="${movie.idmovie}">
-								<input type="hidden" name="nick" value="${cookie.login.value}" />
+								<input type="hidden" name="nick" value="${pageContext.request.remoteUser}" />
 
 								<input type="submit" value="Оценить">
 							</form>
@@ -71,13 +71,13 @@
                 <div id="information"></div>
 
                 <c:choose>
-                    <c:when test="${cookie.login.value == null || cookie.login.value == 'nuvottakvot' || cookie.login.value == 'doesntExist'}">
+                    <c:when test="${pageContext.request.remoteUser == null}">
                         <p style="color: red">Чтобы отправить отзыв, вам необходимо авторизоваться.</p>
                     </c:when>
 
                     <c:otherwise>
                         <div class="send" style="display:none" id="sendcommentdiv">
-                            <input type="hidden" name="nick" value="${cookie.login.value}" />
+                            <input type="hidden" name="nick" value="${pageContext.request.remoteUser}" />
 							<input type="hidden" name="idmovie" value="${movie.idmovie}" />
 							<input type="hidden" name="namemovie" value="${movie.namemovie}" />
                             <textarea id="textarea" name="content" style="resize: none"></textarea>

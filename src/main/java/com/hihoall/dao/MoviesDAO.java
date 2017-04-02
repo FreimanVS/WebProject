@@ -98,4 +98,21 @@ public class MoviesDAO implements DAO<Movies>  {
         currentSession.createQuery("UPDATE Movies SET " + column +" = " + value + " WHERE idmovie = '"  + id + "'")
                 .executeUpdate();
     }
+
+    @Override
+    public void delete(int id) {
+
+    }
+
+    @Override
+    public Movies get(Long id) {
+        return null;
+    }
+
+    @Override
+    public void delete(Long id) {
+        Session currentSession = sessionFactory.getCurrentSession();
+        Query q = currentSession.createQuery("delete Movies where id = '" + id + "'");
+        q.executeUpdate();
+    }
 }

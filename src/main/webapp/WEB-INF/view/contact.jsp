@@ -27,6 +27,9 @@
 						<input type="text" name="review_name" placeholder="ваше имя">
 						<input type="text" name="review_email" placeholder="ваш email">
 						<textarea name="review_text" style="resize: none"></textarea>
+
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+
 						<input class="btn" type="submit" value="отправить">
 					</form>
 				</div>
@@ -41,9 +44,6 @@
                     <a href="https://stepik.org/certificate/f0e9969ccc50388d15381248089e16bb8ffbc8b0.pdf" target="_blank">Computer Science Center Certificate</a> <br />
                     <a href="https://stepik.org/certificate/b8041cbeb49524a91750af92d54e7572ff1915bb.pdf" target="_blank">@Mail.ru Group Certificate</a> <br />
 					<a href="https://stepik.org/certificate/d40a6694ae8b83398991c96b29b1c47c241591d8.pdf" target="_blank">@Mail.ru Group Certificate 2</a> <br />
-
-
-
 				</p>
 			</div>
 		</div>

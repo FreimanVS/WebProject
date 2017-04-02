@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $.ajax({
         url: "/comments2/getComments" + window.location.search,
-        type: "POST",
+        type: "GET",
         data: ({}),
         dataType: "html",
         beforeSend: function() {
@@ -15,7 +15,7 @@ $(document).ready(function() {
     $("#testid").bind("click", function() {
         $.ajax({
             url: "/comments2/add",
-            type: "POST",
+            type: "GET",
             data: ({nick: $("input[name='nick']").val(), content: $("#textarea").val(),
                 idmovie: $("input[name='idmovie']").val(), namemovie: $("input[name='namemovie']").val()}),
             dataType: "html",

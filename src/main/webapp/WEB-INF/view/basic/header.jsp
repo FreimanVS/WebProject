@@ -12,7 +12,6 @@
         <ul class="menu">
             <li><a href="/index">Главная</a></li>
             <li><a href="/films">Фильмы</a></li>
-            <%--<li><a href="#">Сериалы</a></li>--%>
             <li><a href="/rating">Рейтинг фильмов</a></li>
             <li><a href="/contact">Контакты</a></li>
         </ul>
