@@ -52,6 +52,12 @@ public class AbstractService<T> implements TheService<T>   {
 
     @Override
     @Transactional
+    public T get(Long id) {
+        return dao.get(id);
+    }
+
+    @Override
+    @Transactional
     public T get(String uniqParam, String valueTheParam) {
         return dao.get(uniqParam, valueTheParam);
     }
@@ -60,6 +66,12 @@ public class AbstractService<T> implements TheService<T>   {
     @Transactional
     public T get(String firstParam, int firstValue, String secondParam, String secondValue) {
         return dao.get(firstParam, firstValue, secondParam, secondValue);
+    }
+
+    @Override
+    @Transactional
+    public void delete(int id) {
+        dao.delete(id);
     }
 
     @Override
@@ -84,5 +96,11 @@ public class AbstractService<T> implements TheService<T>   {
     @Transactional
     public void update(String column, int value, int id) {
         dao.update(column, value, id);
+    }
+
+    @Override
+    @Transactional
+    public void delete(Long id) {
+        dao.delete(id);
     }
 }
