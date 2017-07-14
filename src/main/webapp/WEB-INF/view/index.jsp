@@ -7,14 +7,14 @@
 
 <jsp:include page="basic/head-1.1.jsp" />
 
-<title>Главная страница</title>
+<title>Main page</title>
 
 <jsp:include page="basic/head-1.2.jsp" />
 
 <script type="text/javascript" src="/resources/js/notifications.js"></script>
 
 <body>
-	<noscript>Для правильной работы сайта необходимо включить JavaScript</noscript>
+	<noscript>JavaScript is off</noscript>
 
     <sec:authorize access="hasRole('ROLE_ADMIN')">
         <a href="/admin/">to ADMIN PAGE</a>
@@ -32,11 +32,11 @@
 				<jsp:include page="/movies/getBestFour" />
 
 				<div id="technologies">
-					<h2>Этот ресурс создан Фрейман В.С.</h2>
+					<h2>The portal is created by Freiman V. S.</h2>
 
 					<p>
                         <table border="0">
-                            <caption><h2>Технологии, на которых построен данный проект:</h2></caption>
+                            <caption><h2>Technologies on which this project is built:</h2></caption>
 
                             <thead>
                                 <tr>
@@ -48,13 +48,11 @@
                             <tr>
                                 <td>
                                     <ul>
-                                        <li>J2EE</li>
                                         <li>SPRING SECURITY</li>
                                         <li>SPRING MVC</li>
                                         <li>SPRING</li>
                                         <li>HIBERNATE</li>
-                                        <li>JDBC</li>
-                                        <li>JSP & SERVLETS</li>
+                                        <li>JSP</li>
                                         <li>JSTL</li>
                                         <li>MYSQL</li>
                                         <li>TOMCAT</li>
@@ -78,6 +76,19 @@
                     </p>
 
                     <b>OTHER TOOLS</b>: GIT, IntelliJ IDEA, Eclipse, *nix OS, bash.
+
+                    <p>
+                        <br >
+                        <b>Certificates:</b> <br />
+                        Basic:</br />
+                        <a href="https://stepik.org/certificate/f0e9969ccc50388d15381248089e16bb8ffbc8b0.pdf" target="_blank">Computer Science Center Certificate</a> <br />
+                        Algorithms:</br />
+                        <a href="https://stepik.org/certificate/88a384dbefa35b9e2fc701291af29935a332a257.pdf" target="_blank">Computer Science Center Certificate 2</a> <br />
+                        <a href="https://stepik.org/certificate/57541308193fb657e08156c671c137abfc3e4b4d.pdf" target="_blank">Computer Science Center Certificate 3</a> <br />
+                        Web:</br />
+                        <a href="https://stepik.org/certificate/b8041cbeb49524a91750af92d54e7572ff1915bb.pdf" target="_blank">@Mail.ru Group Certificate</a> <br />
+                        <a href="https://stepik.org/certificate/d40a6694ae8b83398991c96b29b1c47c241591d8.pdf" target="_blank">@Mail.ru Group Certificate 2</a> <br />
+                    </p>
 				</div>
 			</div>
 		</div>

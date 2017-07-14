@@ -31,7 +31,7 @@ $(function() {
             function(permission) {
                 if (permission == 'granted') {
                     var message = new Notification('Welcome', {
-                        body: 'Hello. We glad that you joined to our friendly community',
+                        body: 'Hello. We are glad that you joined our friendly community',
                         icon: 'http://i1292.photobucket.com/albums/b580/supermario1989/1_zps0763995a.jpg'
                     });
                 }

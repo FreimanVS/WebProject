@@ -3,7 +3,7 @@
 
 <jsp:include page="basic/head-1.1.jsp" />
 
-<title>Контакты</title>
+<title>Contacts</title>
 
 <jsp:include page="basic/head-1.2.jsp" />
 
@@ -17,11 +17,11 @@
 			<jsp:include page="basic/sidebar_container.jsp" />
 
 			<div class="content">
-				Ваше сообщение было успешно отправлено!
+				Your message has been sent!
 				<br />
-				<br /> <a href='/contact'>вернуться назад</a>
+				<br /> <a href='/contact'>back</a>
 				<br />
-				<br /> <a href='/index'>вернуться на главную страницу</a>
+				<br /> <a href='/index'>to the main page</a>
 			</div>
 		</div>
 

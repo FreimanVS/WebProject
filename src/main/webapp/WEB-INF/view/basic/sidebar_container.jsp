@@ -5,7 +5,7 @@
     <div class="sidebar">
         <c:choose>
             <c:when test="${pageContext.request.remoteUser == null}">
-                <h2>Вход</h2>
+                <h2>Login</h2>
 
                 <c:if test="${param.error != null}">
                     <p style="color:red">Invalid username or password.</p>
@@ -16,23 +16,23 @@
                 </c:if>
 
                 <form method="post" action="/login" id="login">
-                    <input type="text" name="username" placeholder="ваше имя" />
-                    <input type="password" name="password" placeholder="ваше пароль" />
+                    <input type="text" name="username" placeholder="your name" />
+                    <input type="password" name="password" placeholder="your password" />
 
-                    <label for="remember-me">запомнить: </label>
+                    <label for="remember-me">remember: </label>
                     <input type="checkbox" name="remember-me" />
 
                     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
-                    <input type="submit" class="btn" value="вход" />
+                    <input type="submit" class="btn" value="accept" />
                     <div class="lables_passreg_text">
-                        <a href="/users/registration">регистрация</a></span>
+                        <a href="/users/registration">dont have an account?</a></span>
                     </div>
                 </form>
             </c:when>
 
             <c:otherwise>
-                <h2>Добро пожаловать,</h2> <b><c:out value="${pageContext.request.remoteUser}"/></b>
+                <h2>Welcome,</h2> <b><c:out value="${pageContext.request.remoteUser}"/></b>
 
                 <c:url var="logoutUrl" value="/logout"/>
                 <form action="${logoutUrl}" method="post" id="login">
@@ -44,7 +44,7 @@
     </div>
 
     <div class="sidebar" id="chat_div">
-        <h2>Чат</h2>
+        <h2>Chat</h2>
 
         <div>
             <c:choose>
@@ -54,7 +54,7 @@
                     </div>
 
                     <p id="youNeedToLogin">
-                        Чтобы писать в чате, необходимо авторизоваться
+                        To chat you need to be logged in.
                     </p>
                 </c:when>
 
@@ -67,7 +67,7 @@
 
                     <form name="message" onclick="return false;">
                         <input name="usermsg" type="text" id="message" size="40"/>
-                        <input type="button" name="submitmsg" value="отправить"/>
+                        <input type="button" name="submitmsg" value="send"/>
                     </form>
                 </c:otherwise>
             </c:choose>
@@ -75,18 +75,18 @@
     </div>
 
     <div class="sidebar">
-        <h2>Поиск</h2>
+        <h2>Search</h2>
         <form method="get" action="/search" id="search_form" >
-            <input type="search" name="search_field" placeholder="ваш запрос" />
-            <input type="submit" class="btn" value="найти" />
+            <input type="search" name="search_field" placeholder="your request" />
+            <input type="submit" class="btn" value="find" />
         </form>
     </div>
 
     <div class="sidebar">
-        <h2>Сообщение дня</h2>
+        <h2>A message of a day</h2>
         <span>23.12.2016</span>
-        <p>Мы запустили расширенный поиск</p>
-        <%--<a href="#">читать</a>--%>
+        <p>We have launched an advanced search bar</p>
+        <%--<a href="#">read more</a>--%>
     </div>
 
     <jsp:include page="/movies/getBestFourSidebar" />
